@@ -5,7 +5,7 @@ main {
 
 .hero {
 	flex-basis: 30vh;
-	background-image: url(../assets/images/hero.webp);
+	background-image: url(../assets/images/hero.jpg);
 	background-position: left;
 	background-size: cover;
 }

@@ -25,6 +25,7 @@
 	padding: var(--spacing-small);
 }
 
+/* Lastly: Make the img grow to take up the height available  */
 .card img {
 	flex: 1;
 	object-fit: cover;
@@ -42,6 +43,7 @@
 		padding: var(--spacing-small);
 	}
 	.card-container {
+		/* One column that takes the wole width */
 		grid-template-columns: 100%;
 	}
 
