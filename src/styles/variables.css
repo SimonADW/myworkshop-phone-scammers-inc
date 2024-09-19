@@ -1,0 +1,22 @@
+:root {
+	/* Colors */
+	--foreground-color: #000000;
+	--background-color: #ffffff;
+	--link-color: #1d684b;
+	--hover-color: #16231e;
+
+
+	/* Spacing */
+	--spacing-small: 1rem;
+	--spacing-medium: 2rem;
+	--spacing-large: 4rem;
+}
+
+/* Dark mode */
+@media screen and (prefers-color-scheme: dark) {
+	:root {
+		--background-color: #000000;
+		--foreground-color: #ffffff;
+		--hover-color: #55f0b2;
+	}
+}

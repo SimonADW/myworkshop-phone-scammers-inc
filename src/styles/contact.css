@@ -1,0 +1,75 @@
+main {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	gap: var(--spacing-large);
+	padding: var(--spacing-large);
+}
+
+.contact-heading {
+	text-align: center;
+}
+
+/* FORM SECTION ----------- */
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	width: clamp(10rem, 50vw , 30rem);
+}
+
+.contact-form input {
+	height: var(--spacing-medium);
+}
+
+.contact-form input:not([type="radio"]),
+.contact-form textarea,
+.contact-form fieldset {
+	padding: 0.3rem;
+	margin-bottom: var(--spacing-medium);	
+}
+
+/* RADIO BUTTONS */
+.contact-form fieldset {
+	display: flex;
+	gap: var(--spacing-small);
+}
+
+.radio-container {
+	display: flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+/* TEXT AREA */
+.contact-form textarea {
+	margin-bottom: var(--spacing-medium);
+}
+
+/* BUTTON */
+.contact-form button {
+	height: var(--spacing-medium);
+	border-radius: 5px;
+	border-style: none;
+	color: white;
+	background: var(--link-color);
+}
+
+.contact-form button:hover {
+	background: var(--hover-color);
+}
+
+/* CONTACT INFO -------------- */
+.contact-info {
+	text-align: center;
+}
+
+/* Responsiveness for smaller devices */
+@media screen and (max-width: 700px) { 
+	main {
+		padding: var(--spacing-large) var(--spacing-small);
+	}
+	.contact-form {
+		width: 100%;
+	}	
+}
